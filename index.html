@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <title>Portafolio</title>
+        <link rel="stylesheet" href="estilo.css">
+    </head>
+    <body>
+        <!--- MENU ENCABEZADO -->
+        <div class="contenedor-header">
+            <header>
+                <div class="logo">
+                    <a href="#">Samuel</a>
+                </div>
+                <nav id="nav">
+                    <ul>
+                        <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                        <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                        <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                        <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                        <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                    </ul>
+                </nav>
+                <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </header>
+
+        </div>
+        <!-- SECCION INICIO --> 
+        <section id="inicio" class="inicio">
+                <div class="contenido-banner">
+                 <div class="contenedor-img">
+                     <img src="img/hero.png" alt="">  
+                 </div>
+                 <h1>SAMUEL SANTANDER</h1>
+                 <h2>Ingeniero de Software - Analista QA</h2>
+                <div class="redes">
+                    <a href="https://www.facebook.com/samuelandres.santanderbustcovich/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://twitter.com/samuelsantande2/" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://discordapp.com/users/961406777793081385/" target="_blank"><i class="fa-brands fa-discord"></i></a>
+                    <a href="https://www.linkedin.com/in/samuel-andr%C3%A9s-santander-bustcovich-8863144b/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://github.com/BustcovichDev" target="_blank"><i class="fa-brands fa-github"></i></a>
+                </div>
+                </div>
+        </section>  
+
+        <!-- SECCION SOBRE MI-->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+                <h2>Sobre Mí</h2>
+                <p><span>Hola, soy Samuel Santander</span>, Ingeniero en Informática con once años de experiencia en la Industria de TI. Destacado por mi compromiso, versatilidad y habilidades blandas. Busco soluciones y resultados de calidad, actualizado en tendencias. Orientado al logro, trabajo en equipo y resolución de problemas bajo presión. La satisfacción del usuario/cliente es mi enfoque.</p>
+                    
+                <div class="fila">
+                        <!-- datos personales -->
+                        <div class="col">
+                            <h3>Datos Personales</h3>
+                            <ul>
+                                <li>
+                                    <strong>Cumpleaños</strong>
+                                    09-07-1991
+                                </li>
+                                <li>
+                                    <strong>Teléfono</strong>
+                                    +56-988009384
+                                </li>
+                                <li>
+                                    <strong>Email</strong>
+                                    samuel.bustcovich@gmail.com
+                                </li>
+                                <li>
+                                    <strong>Website</strong>
+                                    www.samu-inge.org
+                                </li>
+                                <li>
+                                    <strong>Dirección</strong>
+                                    Santiago, RM, Chile
+                                </li>
+                                <li>
+                                    <strong>Cargo</strong>
+                                    <span>Ingeniero en Informática</span> 
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- intereses-->
+                        <div class="col">
+                            <h3>Intereses</h3>
+                            <div class="contenedor-intereses">
+                                <div class="interes"> 
+                                    <i class="fa-solid fa-helicopter"></i>
+                                    <span>DRONES</span>
+                                </div>
+                                <div class="interes">
+                                    
+                                    <i class="fa-solid fa-headphones"></i>
+                                    <span>MUSICA</span>
+                                </div>
+                                <div class="interes">
+                                    <i class="fa-solid fa-plane"></i>
+                                    <span>VIAJAR</span>
+                                </div>
+                                <div class="interes">
+                                    <i class="fa-brands fa-windows"></i>
+                                    <span>WINDOWS</span>
+                                </div>
+                                <div class="interes">
+                                    <i class="fa-solid fa-person-running"></i>
+                                    <span>DEPORTE</span>
+                                </div>
+                                <div class="interes">
+                                    <i class="fa-solid fa-book-open-reader"></i>
+                                    <span>LIBROS</span>
+                                </div>
+                                <div class="interes">
+                                    <i class="fa-solid fa-car"></i>
+                                    <span>AUTOS</span>
+                                </div>
+                                <div class="interes">
+                                    <i class="fa-solid fa-camera-retro"></i>
+                                    <span>FOTOS</span>
+                                </div>
+
+                            </div>
+                        </div>
+                </div>
+            <button>
+                Descargar CV <a href="https://drive.google.com/u/0/uc?id=1_5pJnuSQZr6e2JeKBrKDR53g_ng6g5Qn&export=download"><i class="fa-solid fa-download"></i>
+                </a>
+                <span class="overlay"></span>
+            </button>
+        </div>  
+    </section>
+        <!-- SECCION SKILLS-->
+        <section class="skills" id="skills">
+            <div class="contenido-seccion">
+                <h2>Skills</h2>
+                <div class="fila">
+                    <!-- Technical Skill -->
+                    <div class="col">
+                        <h3>Technical Skills</h3>
+                        <div class="skill">
+                            <span>HTML & CSS</span>
+                            <div class="barra-skill">
+                                <div class="progreso htmlcss">
+                                    <span>75%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>JavaScript</span>
+                            <div class="barra-skill">
+                                <div class="progreso javascript">
+                                    <span>70%</span>
+                                </div>
+                        </div>
+                        <div class="skill">
+                            <span>PL/SQL</span>
+                             <div class="barra-skill">
+                                <div class="progreso plsql">
+                                    <span>65%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>Linux</span>
+                            <div class="barra-skill">
+                                <div class="progreso linux">
+                                    <span>70%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>Testing</span>
+                            <div class="barra-skill">
+                                <div class="progreso testig">
+                                    <span>75%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    <!-- Profesional Skills-->
+                <div class="col">
+                    <h3>Profesional Skills</h3>
+                    <div class="skill">
+                        <span>Comunicación efectiva</span>
+                        <div class="barra-skill">
+                            <div class="progreso comunicacionEfectiva">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Resolución de Problemas</span>
+                        <div class="barra-skill">
+                            <div class="progreso resolucionProblemas">
+                                <span>90%</span>
+                            </div>
+                    </div>
+                    <div class="skill">
+                        <span>Pensamiento Lógico</span>
+                         <div class="barra-skill">
+                            <div class="progreso pensamientoLogico">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Compromiso</span>
+                        <div class="barra-skill">
+                            <div class="progreso compromiso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Autoliderazgo</span>
+                        <div class="barra-skill">
+                            <div class="progreso autoliderazgo">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <!-- SECCION CURRICULUM-->
+        <section id="curriculum" class="curriculum">
+           <div class="contenido-seccion">
+                <h2>Curriculum</h2>
+                <div class="fila">
+                    <div class="col izquierda">
+                        <h3>Educación</h3>
+                        <div class="item izq">
+                            <h4>Ingeniero en Informática</h4>
+                            <span class="casa">Duoc UC Sede Antonio Varas</span>
+                            <span class="fecha">2020</span>
+                            <div class="conectori">
+                                <div class="circuloi"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col derecha">
+                        <h3>Experiencia de trabajo</h3>
+                        <div class="item der">
+                            <h4>Analista QA</h4>
+                            <span class="casa">Connectis - Banco Santander</span>
+                            <span class="fecha">2021 - 2022</span>
+                            <p>Durante mi tiempo en el proyecto, contribuí a la creación y ejecución de 
+                                casos de prueba generados en Jira. También me encargué de documentar evidencias 
+                                en Xray y gestioné la aprobación de desarrollos para ambientes superiores, 
+                                todo dentro de un marco ágil tipo Kanban. </p>
+                            <div class="conectord">
+                                <div class="circulod"></div>
+                            </div>
+                        </div>
+                        <div class="item der">
+                            <h4>Analista Programador</h4>
+                            <span class="casa">Connectis - Banco Santander</span>
+                            <span class="fecha">2020 - 2021</span>
+                            <p>En mi rol de Analista Programador, tuve la responsabilidad de llevar a cabo diversas 
+                                tareas relacionadas con la creación, modificación y mantenimiento de formularios, tareas 
+                                y procesos en Ultimus BPM. Además, realicé análisis y modificaciones en las entidades, 
+                                atributos y modelo de Hipotecario Digital utilizando Oracle.
+                                Mi contribución incluyó el desarrollo de paquetes, procedimientos, 
+                                funciones y consultas en PL/SQL. También me encargué de la documentación y despliegue 
+                                de desarrollos en ambientes superiores, lo que abarcó incluso el entorno de producción.
+                                Durante este proceso, trabajé con diversas tecnologías, entre las que se incluyen BPM Ultimus,
+                                BDD Oracle, C#, Visual Basic 6, JavaScript, HTML, Jira, Confluence y ServiceNow.
+                            </p>
+                            <div class="conectord">
+                                <div class="circulod"></div>
+                            </div>
+                        </div>
+                        <div class="item der">
+                            <h4>Soporte Senior</h4>
+                            <span class="casa">Connectis - Santander Globaltech</span>
+                            <span class="fecha">2017 - 2019</span>
+                            <p>En mi función, me encargué de gestionar incidentes de diversas complejidades
+                            utilizando la plataforma ServicesNow. Además, trabajé activamente con VMware Vcenter 
+                            y Active Directory en entornos Windows Server.</p>
+                            <div class="conectord">
+                                <div class="circulod"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+           </div> 
+        </section>
+        <!-- SECCION CONTACTO -->
+        <section id="contacto" class="contacto">
+            <div class="contenido-seccion">
+                <h2>CONTACTO</h2>
+                <div class="fila">
+                    <!-- Formulario -->
+                    <div class="col formulario-col"> 
+                        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfrSHCjGPfsbuHLRZUbSaNRnRjoCwZL7l8tYQ61XZFE3WX4AA/viewform?embedded=true" width="640" height="1090" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
+                    </div>
+                    <!-- Información de contacto -->
+                    <div class="col contacto-col">
+                        <img src="img/Ubicacion_2.png" alt="">
+                        <div class="info">
+                            <ul>
+                                <li>
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    Santiago, Chile.
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-mobile-screen"></i>
+                                    Celular: +56-988009384
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-envelope"></i>
+                                    samuel.bustcovich@gmail.com
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+        </section>        
+        <!-- footer -->
+        <footer>
+            <a href="#inicio" class="arriba">
+                <i class="fa-solid fa-angles-up"></i>
+            </a>
+            <div class="redes">
+                <a href="https://www.facebook.com/samuelandres.santanderbustcovich/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://twitter.com/samuelsantande2/" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://discordapp.com/users/961406777793081385/" target="_blank"><i class="fa-brands fa-discord"></i></a>
+                <a href="https://www.linkedin.com/in/samuel-andr%C3%A9s-santander-bustcovich-8863144b/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/BustcovichDev" target="_blank"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>
